@@ -23,7 +23,7 @@
         integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
 
     <!-- Custom CSS Style -->
-    <link rel="stylesheet" href="/css/stentechdev.min.css">
+    <link rel="stylesheet" href="css/stentechdev.min.css">
 
     <!-- Favicon Logo -->
     <link rel="icon" href="img/favicon.jpg" type="image/x-icon" />
@@ -36,7 +36,7 @@
     <nav class="navbar navbar-light fixed-top navbar-expand-lg">
         <div class="container">
             <!-- Top Left SM Logo -->
-            <a href="index.html"><img src="/img/smLogo.jpg" alt="SM Logo"></a>
+            <a href="index.html#home"><img src="img/smLogo.jpg" alt="SM Logo"></a>
 
             <!-- Mobile menu functionality -->
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar"
@@ -46,6 +46,26 @@
 
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home" data-target="#home">
+                            <span>Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about" data-target="#about">
+                            <span>About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#skills" data-target="#skills">
+                            <span>Skills</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#experiences" data-target="#experiences">
+                            <span>Experiences</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#accomplishments" data-target="#accomplishments">
+                            <span>Accomplishments</span></a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#articles" data-target="#articles">
                             <span>Articles</span></a>
@@ -69,7 +89,7 @@
 
 
     <!-- 1ST CARD : WELCOME -->
-    <section class="home-section wg-hero">
+    <section id="home" class="home-section wg-hero">
         <div class="container card-1">
             <div class="row">
                 <div class="col-md-6 order-md-1 text-center text-md-left align-self-center">
@@ -101,7 +121,7 @@
 
 
     <!-- 2ND CARD : ABOUT -->
-    <section class="home-section">
+    <section id="about" class="home-section">
         <div class="container">
             <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
                 itemref="person-email person-telephone person-address">
@@ -163,8 +183,7 @@
                         games and participating in sports, my two favourites being football and basketball.
                     </p>
 
-                    <a href="#" class="btn btn-primary btn-lg" onClick="passwd()"><i class="fas fa-download mr-2"
-                            aria-hidden="true"></i>Download CV</a>
+                    <a href="#" class="btn btn-primary btn-lg" onClick="passwd()"><i class="fas fa-download mr-2" aria-hidden="true"></i>Download CV</a>
                 </div>
             </div>
         </div>
@@ -268,7 +287,7 @@
 
 
     <!-- 4TH CARD : EXPERIENCES -->
-    <section id="experience" class="home-section wg-experience   ">
+    <section id="experiences" class="home-section wg-experience   ">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center section-heading">
@@ -376,7 +395,7 @@
 
 
     <!-- 5TH CARD : ACCOMPLISHMENTS -->
-    <section class="home-section wg-accomplishments">
+    <section id="accomplishments" class="home-section wg-accomplishments">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center section-heading">
@@ -823,40 +842,24 @@
                             <ul class="list-inline text-center">
                                 <li class="list-inline-item">
                                     <a href="#" data-filter="*" class="btn btn-primary btn-lg active">All</a>
-                                    <a href="#" data-filter=".js-id-Deep-Learning" class="btn btn-primary btn-lg">Deep
-                                        Learning</a>
-                                    <a href="#" data-filter=".js-id-Demo" class="btn btn-primary btn-lg">Other</a>
-                                    <a href="#" data-filter=".js-id-human" class="btn btn-primary btn-lg">Human</a>
-                                    <a href="#" data-filter=".js-id-robotics"
-                                        class="btn btn-primary btn-lg">Robotics</a>
+                                    <a href="#" data-filter=".js-id-Websites" class="btn btn-primary btn-lg">Websites</a>
+                                    <a href="#" data-filter=".js-id-ios" class="btn btn-primary btn-lg">iOS Apps</a>
+                                    <a href="#" data-filter=".js-id-android" class="btn btn-primary btn-lg">Android Apps</a>
+                                    <a href="#" data-filter=".js-id-games"class="btn btn-primary btn-lg">Games</a>
+                                    <a href="#" data-filter=".js-id-games"class="btn btn-primary btn-lg">Other</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="isotope projects-container js-layout-masonry ">
-                        <div class="project-card project-item isotope-item js-id-Demo js-id-robotics">
+                        <div class="project-card project-item isotope-item js-id-Demo">
                             <div class="card rounded-0 shadow-sm">
-                                <a href="/academia-hugo/project/artificial-intelligence/" class="card-image">
-                                    <img src="/academia-hugo/project/artificial-intelligence/featured_hu6c0b305659adbd3ad0bb1e71e95fba4b_145422_550x0_resize_q90_lanczos.jpg"
+                                <a href="#" class="card-image">
+                                    <img src="img/bkg-img.jpg"
                                         alt="" class="img-responsive">
                                 </a>
                                 <div class="card-body">
-                                    <h4><a href="/academia-hugo/project/artificial-intelligence/">Artificial
-                                            Intelligence</a></h4>
-                                    <div class="card-desription">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eius.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
-                            <div class="card rounded-0 shadow-sm">
-                                <a href="/academia-hugo/project/deep-learning/" class="card-image">
-                                    <img src="/academia-hugo/project/deep-learning/featured_hu2f10183b737d61a7067f845238986e95_517328_550x0_resize_q90_lanczos.jpg"
-                                        alt="" class="img-responsive">
-                                </a>
-                                <div class="card-body">
-                                    <h4><a href="/academia-hugo/project/deep-learning/">Deep Learning</a></h4>
+                                    <h4><a href="#">Coming Soon</a></h4>
                                     <div class="card-desription">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eius.</p>
                                     </div>
@@ -865,45 +868,55 @@
                         </div>
                         <div class="project-card project-item isotope-item js-id-Demo">
                             <div class="card rounded-0 shadow-sm">
-                                <a href="http://example.org" target="_blank" rel="noopener" class="card-image">
-                                    <img src="/academia-hugo/project/external-project/featured_hudcd0f4e2122db32ce26fba26432226b5_547671_550x0_resize_q90_lanczos.jpg"
+                                <a href="#" class="card-image">
+                                    <img src="img/bkg-img.jpg"
                                         alt="" class="img-responsive">
                                 </a>
                                 <div class="card-body">
-                                    <h4><a href="http://example.org" target="_blank" rel="noopener">External Project</a>
+                                    <h4><a href="#">Coming Soon</a></h4>
+                                    <div class="card-desription">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eius.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card project-item isotope-item js-id-Demo">
+                            <div class="card rounded-0 shadow-sm">
+                                <a href="#" target="_blank" rel="noopener" class="card-image">
+                                    <img src="img/bkg-img.jpg"
+                                        alt="" class="img-responsive"></a>
+                                <div class="card-body">
+                                    <h4><a href="#" target="_blank" rel="noopener">Coming Soon</a>
                                     </h4>
                                     <div class="card-desription">
-                                        <p>An example of linking directly to an external project website using
-                                            &ldquo;external_link&rdquo;.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eius.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="project-card project-item isotope-item js-id-Deep-Learning">
                             <div class="card rounded-0 shadow-sm">
-                                <a href="/academia-hugo/project/internal-project/" class="card-image">
-                                    <img src="/academia-hugo/project/internal-project/featured_hud12993ed88efcd4a474de88bbfcb308e_416984_550x0_resize_q90_lanczos.jpg"
+                                <a href="#" class="card-image">
+                                    <img src="img/bkg-img.jpg"
                                         alt="" class="img-responsive">
                                 </a>
                                 <div class="card-body">
-                                    <h4><a href="/academia-hugo/project/internal-project/">Internal Project</a></h4>
+                                    <h4><a href="#">Coming Soon</a></h4>
                                     <div class="card-desription">
-                                        <p>An example of using the in-built project page.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eius.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="project-card project-item isotope-item js-id-Robotics">
                             <div class="card rounded-0 shadow-sm">
-
-
-                                <a href="/academia-hugo/project/robotics/" class="card-image">
-                                    <img src="/academia-hugo/project/robotics/featured_hu794e390df3a30800c66d68d4fc4eb331_105904_550x0_resize_q90_lanczos.jpg"
+                                <a href="#" class="card-image">
+                                    <img src="img/bkg-img.jpg"
                                         alt="" class="img-responsive">
                                 </a>
 
                                 <div class="card-body">
-                                    <h4><a href="/academia-hugo/project/robotics/">Robotics</a></h4>
+                                    <h4><a href="#">Coming Soon</a></h4>
                                     <div class="card-desription">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eius.</p>
                                     </div>
@@ -914,13 +927,13 @@
                             <div class="card rounded-0 shadow-sm">
 
 
-                                <a href="/academia-hugo/project/skin-cancer-ai/" class="card-image">
-                                    <img src="/academia-hugo/project/skin-cancer-ai/featured_hu2ba4d2990bc426259049f6d933026b0d_91597_550x0_resize_q90_lanczos.jpg"
+                                <a href="#" class="card-image">
+                                    <img src="img/bkg-img.jpg"
                                         alt="" class="img-responsive">
                                 </a>
 
                                 <div class="card-body">
-                                    <h4><a href="/academia-hugo/project/skin-cancer-ai/">Skin Cancer AI</a></h4>
+                                    <h4><a href="#">Coming Soon</a></h4>
                                     <div class="card-desription">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eius.</p>
                                     </div>
@@ -937,7 +950,7 @@
 
 
     <!-- FEATURED -->
-    <!-- <section id="featured" class="home-section wg-featured   ">
+    <section id="featured" class="home-section wg-featured   ">
         <div class="container">
             <div class="row">
                 <div class="col-12 section-heading text-center">
@@ -946,34 +959,29 @@
                 <div class="col-12">
                     <div class="row justify-content-center">
                         <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card-simple" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                                <a href="/academia-hugo/publication/conference-paper/">
-                                    <img src="/academia-hugo/publication/conference-paper/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_312700_918x517_fill_q90_lanczos_smart1.jpg"
+                            <div class="card-simple" itemscope itemtype="#">
+                                <a href="#">
+                                    <img src="img/web-dev-course.jpg"
                                         class="article-banner" itemprop="image" alt="">
                                 </a>
                                 <div class="card-body">
                                     <h3 class="article-title mb-1 mt-0" itemprop="name">
-                                        <a href="/academia-hugo/publication/conference-paper/" itemprop="url">An example
-                                            conference paper</a>
+                                        <a href="#" itemprop="url">Complete Web Development Course</a>
                                     </h3>
-                                    <meta content="2013-07-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-                                    <meta content="2013-07-01 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+                                    <meta content="2020-11-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+                                    <meta content="2020-11-01 00:00:00 &#43;0000 UTC" itemprop="dateModified">
 
                                     <div class="article-metadata">
                                         <div>
-                                            <span itemprop="author name" itemtype="http://schema.org/Person"><a
-                                                    href="/academia-hugo/authors/admin/">Michael Vahn</a></span>, <span
-                                                itemprop="author name" itemtype="http://schema.org/Person"><a
-                                                    href="/academia-hugo/authors/robert-ford/">Robert Ford</a></span>
+                                            <span itemprop="author name" itemtype="http://stentechdev.com"><a
+                                                    href="#">Sten Mayunga</a></span>,
                                         </div>
                                         <span class="article-date">
-                                            <time>July 2013</time>
+                                            <time>Pending</time>
                                         </span>
                                         <span class="middot-divider"></span>
                                         <span class="pub-publication">
-
-                                            In <em>STC</em>
-
+                                            In <em>TBA</em>
                                         </span>
                                     </div>
                                     <div class="article-style" itemprop="articleBody">
@@ -989,7 +997,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
 
     <!-- 8TH CARD : COURSES -->
@@ -1007,54 +1015,56 @@
                             <ul class="list-inline text-center">
                                 <li class="list-inline-item">
                                     <a href="#" data-filter="*" class="btn btn-primary btn-lg active">All</a>
-                                    <a href="#" data-filter=".js-id-Deep-Learning" class="btn btn-primary btn-lg">Deep
-                                        Learning</a>
-                                    <a href="#" data-filter=".js-id-Demo" class="btn btn-primary btn-lg">Other</a>
-                                    <a href="#" data-filter=".js-id-human" class="btn btn-primary btn-lg">Human</a>
-                                    <a href="#" data-filter=".js-id-robotics"
-                                        class="btn btn-primary btn-lg">Robotics</a>
+                                    <a href="#" data-filter=".js-id-HTML" class="btn btn-primary btn-lg">HTML</a>
+                                    <a href="#" data-filter=".js-id-CSS" class="btn btn-primary btn-lg">CSS</a>
+                                    <a href="#" data-filter=".js-id-JavaScript" class="btn btn-primary btn-lg">JavaScript</a>
+                                    <a href="#" data-filter=".js-id-FEL" class="btn btn-primary btn-lg">Front End Libraries</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="isotope projects-container js-layout-masonry ">
-                        <div class="project-card project-item isotope-item js-id-Demo js-id-robotics">
+                        <div class="project-card project-item isotope-item js-id-JavaScript js-id-FEL">
                             <div class="card rounded-0 shadow-sm">
-                                <a href="/academia-hugo/project/artificial-intelligence/" class="card-image">
-                                    <img src="/academia-hugo/project/artificial-intelligence/featured_hu6c0b305659adbd3ad0bb1e71e95fba4b_145422_550x0_resize_q90_lanczos.jpg"
+                                <a href="#" class="card-image">
+                                    <img src="img/jquery-course.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="card-body">
+                                    <h4>
+                                        <a href="#">
+                                        jQuery
+                                        </a>
+                                    </h4>
+                                    <div class="card-desription">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eius.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card project-item isotope-item js-id-CSS js-id-FEL">
+                            <div class="card rounded-0 shadow-sm">
+                                <a href="#" class="card-image">
+                                    <img src="img/bootstrap-course.jpg"
                                         alt="" class="img-responsive">
                                 </a>
                                 <div class="card-body">
-                                    <h4><a href="/academia-hugo/project/artificial-intelligence/">Artificial
-                                            Intelligence</a></h4>
+                                    <h4><a href="#">Bootstrap</a></h4>
                                     <div class="card-desription">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eius.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
+                        <div class="project-card project-item isotope-item js-id-JavaScript">
                             <div class="card rounded-0 shadow-sm">
-                                <a href="/academia-hugo/project/deep-learning/" class="card-image">
-                                    <img src="/academia-hugo/project/deep-learning/featured_hu2f10183b737d61a7067f845238986e95_517328_550x0_resize_q90_lanczos.jpg"
+                                <a href="#" target="_blank" rel="noopener" class="card-image">
+                                    <img src="img/javascript-course.jpg"
                                         alt="" class="img-responsive">
                                 </a>
                                 <div class="card-body">
-                                    <h4><a href="/academia-hugo/project/deep-learning/">Deep Learning</a></h4>
-                                    <div class="card-desription">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eius.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card project-item isotope-item js-id-Demo">
-                            <div class="card rounded-0 shadow-sm">
-                                <a href="http://example.org" target="_blank" rel="noopener" class="card-image">
-                                    <img src="/academia-hugo/project/external-project/featured_hudcd0f4e2122db32ce26fba26432226b5_547671_550x0_resize_q90_lanczos.jpg"
-                                        alt="" class="img-responsive">
-                                </a>
-                                <div class="card-body">
-                                    <h4><a href="http://example.org" target="_blank" rel="noopener">External Project</a>
+                                    <h4><a href="#" target="_blank" rel="noopener">JavaScript ES6</a>
                                     </h4>
                                     <div class="card-desription">
                                         <p>An example of linking directly to an external project website using
@@ -1063,50 +1073,50 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="project-card project-item isotope-item js-id-Deep-Learning">
+                        <div class="project-card project-item isotope-item js-id-CSS">
                             <div class="card rounded-0 shadow-sm">
-                                <a href="/academia-hugo/project/internal-project/" class="card-image">
-                                    <img src="/academia-hugo/project/internal-project/featured_hud12993ed88efcd4a474de88bbfcb308e_416984_550x0_resize_q90_lanczos.jpg"
+                                <a href="#" class="card-image">
+                                    <img src="img/css3-course.jpg"
                                         alt="" class="img-responsive">
                                 </a>
                                 <div class="card-body">
-                                    <h4><a href="/academia-hugo/project/internal-project/">Internal Project</a></h4>
-                                    <div class="card-desription">
-                                        <p>An example of using the in-built project page.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card project-item isotope-item js-id-Robotics">
-                            <div class="card rounded-0 shadow-sm">
-
-
-                                <a href="/academia-hugo/project/robotics/" class="card-image">
-                                    <img src="/academia-hugo/project/robotics/featured_hu794e390df3a30800c66d68d4fc4eb331_105904_550x0_resize_q90_lanczos.jpg"
-                                        alt="" class="img-responsive">
-                                </a>
-
-                                <div class="card-body">
-                                    <h4><a href="/academia-hugo/project/robotics/">Robotics</a></h4>
+                                    <h4><a href="#">CSS3</a></h4>
                                     <div class="card-desription">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eius.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="project-card project-item isotope-item js-id-human">
+                        <div class="project-card project-item isotope-item js-id-HTML">
+                            <div class="card rounded-0 shadow-sm">
+                                <a href="#" class="card-image">
+                                    <img src="img/html5-course.jpg"
+                                        alt="" class="img-responsive">
+                                </a>
+                                <div class="card-body">
+                                    <h4><a href="#">HTML5</a></h4>
+                                    <div class="card-desription">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card project-item isotope-item js-id-HTML js-id-CSS">
                             <div class="card rounded-0 shadow-sm">
 
 
-                                <a href="/academia-hugo/project/skin-cancer-ai/" class="card-image">
-                                    <img src="/academia-hugo/project/skin-cancer-ai/featured_hu2ba4d2990bc426259049f6d933026b0d_91597_550x0_resize_q90_lanczos.jpg"
+                                <a href="#" class="card-image">
+                                    <img src="img/basic-html-css-course.png"
                                         alt="" class="img-responsive">
                                 </a>
 
                                 <div class="card-body">
-                                    <h4><a href="/academia-hugo/project/skin-cancer-ai/">Skin Cancer AI</a></h4>
+                                    <h4><a href="#">Basic HTML & CSS</a></h4>
                                     <div class="card-desription">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eius.</p>
+                                        <p>
+                                            This section introduces how to use HTML elements to give structure 
+                                            and meaning to your web content.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -1161,7 +1171,7 @@
                     <ul class="fa-ul" itemscope>
                         <li>
                             <i class="fa-li fas fa-phone mt-2" aria-hidden="true"></i>
-                            <span id="person-telephone" itemprop="telephone"><a href="#">secured.</a></span>
+                            <span id="person-telephone" itemprop="telephone"><a href="tel:+447496001350">+44 (0) 749 600 1350</a></span>
                         </li>
                         <li>
                             <i class="fa-li fas fa-map-marker-alt mt-2" aria-hidden="true"></i>
