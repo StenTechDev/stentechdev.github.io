@@ -1,0 +1,42 @@
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+}
+
+@font-face {
+    font-family: Gotham Black Regular;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Gotham Black Regular"), url(fonts/Gotham-Black.woff) format("woff");
+}
+
+.title-gotham[data-v-13acb1a9] {
+    font-family: Gotham Black Regular;
+    margin-bottom: 40px!important
+}
+
+.logo-container[data-v-13acb1a9] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.logo[data-v-13acb1a9] {
+    margin-right: 15px;
+    font-size: 2rem;
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.margin-left-15[data-v-13acb1a9] {
+    margin-left: 15px;
+}
