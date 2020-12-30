@@ -34,6 +34,60 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
+.foot-note {
+    padding-top: 5em;
+    text-align: center;
+    font-size: 60%;
+    text-transform: uppercase;
+}
+
+.und-btn {
+    text-decoration: underline;
+}
+
+.und-btn:hover {
+    color: #5c67fc;
+}
+
+.youtube-switch:hover {
+    color: #FF0000;
+}
+
+@media(max-width:575px) {
+    .youtube-card {
+        height: 287px;
+    }
+}
+
+@media(min-width:576px) {
+    .youtube-card {
+        height: 288px;
+    }
+}
+
+@media(min-width:768px) {
+    .youtube-card {
+        height: 384px;
+    }
+}
+
+@media(min-width:992px) {
+    .youtube-card {
+        height: 496px;
+    }
+}
+
+@media(min-width:1200px) {
+    .youtube-card {
+        height: 600px;
+    }
+} 
+
+.youtube-video {
+    width: 100%;
+    height: 100%
+}
+
 .footer-copyright-text {
     text-align: center;
 }
