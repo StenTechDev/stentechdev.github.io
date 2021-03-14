@@ -34,6 +34,20 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
+.typeText::after {
+    content: "|";
+    animation:  blink 1s step-end infinite;
+}
+  
+@keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+}
+
+.PD-footer {
+    margin-bottom: 3em;
+}
+
 .YT-footer {
     margin-bottom: 5em;
 }
@@ -51,6 +65,40 @@
 
 .und-btn:hover {
     color: #5c67fc;
+}
+
+.podcast-switch:hover {
+    color: #5c67fc;
+}
+
+@media(max-width:575px) {
+    .podcast-card {
+        height: 287px;
+    }
+}
+
+@media(min-width:576px) {
+    .podcast-card {
+        height: 300px;
+    }
+}
+
+@media(min-width:768px) {
+    .podcast-card {
+        height: 250px;
+    }
+}
+
+@media(min-width:992px) {
+    .podcast-card {
+        height: 250px;
+    }
+}
+
+@media(min-width:1200px) {
+    .podcast-card {
+        height: 250px;
+    }
 }
 
 .youtube-switch:hover {

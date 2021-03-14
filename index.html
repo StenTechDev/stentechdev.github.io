@@ -95,16 +95,72 @@
                 <div class="col-md-6 order-md-1 text-center text-md-left align-self-center">
                     <div>
                         <h2>
-                            Hi, I'm <strong>Sten</strong>, Welcome to my Developer Portfolio Website.
-                        </h2>
+                            <script>let today = new Date();
+                                let time = today.getHours();
 
+                                if (time >= 6 && time < 12)
+                                    document.write('Good Morning');
+                                else if (time >= 12 && time < 18)
+                                    document.write('Good Afternoon');
+                                else if (time >= 18 && time < 24)
+                                    document.write('Good Evening');
+                                else if (time >= 0 && time < 6)
+                                    document.write('Good Night');
+                                else
+                                    document.write('Twilight.');</script>, I'm <strong>Sten</strong>, Welcome to my
+                            Developer Portfolio Website.
+                        </h2>
+                        <!-- <a href="https://www.amazon.co.uk/~/e/B07HRHCBNR"><strong>Published
+                            Author</strong> </a> -->
                         <p>
-                            I am a self taught <a href="https://stentechdev.com/bc/businesscard.html">Software & Web
-                                Developer</a> and a
-                            <!-- <a href="https://www.amazon.co.uk/~/e/B07HRHCBNR"> --><strong>Published
-                                Author</strong> <!-- </a> -->based in the United Kingdom. I created this website to
-                            showcase
-                            my skills and document what I've learned.
+                            I am a self taught
+                            <a href="https://stentechdev.com/bc/businesscard.html" target="_blank" class="typeText">
+                                <script>
+                                    let typeText = document.querySelector(".typeText")
+                                    let textToBeTyped = "Developer"
+                                    let textToBeTypedArr = ["Web Developer", "Software Developer", "Game Developer", "Published Author"]
+                                    let index = 0, isAdding = true, textToBeTypedIndex = 0
+
+                                    function playAnim() {
+                                        setTimeout(function () {
+                                            // set the text of typeText to a substring of the text to be typed using index.
+                                            typeText.innerText = textToBeTypedArr[textToBeTypedIndex].slice(0, index)
+                                            if (isAdding) {
+                                                // adding text
+                                                if (index > textToBeTypedArr[textToBeTypedIndex].length) {
+                                                    // no more text to add
+                                                    isAdding = false
+                                                    //break: wait 2s before playing again
+                                                    setTimeout(function () {
+                                                        playAnim()
+                                                    }, 2000)
+                                                    return
+                                                } else {
+                                                    // increment index by 1
+                                                    index++
+                                                }
+                                            } else {
+                                                // removing text
+                                                if (index === 0) {
+                                                    // no more text to remove
+                                                    isAdding = true
+                                                    //switch to next text in text array
+                                                    textToBeTypedIndex = (textToBeTypedIndex + 1) % textToBeTypedArr.length
+                                                } else {
+                                                    // decrement index by 1
+                                                    index--
+                                                }
+                                            }
+                                            // call itself
+                                            playAnim()
+                                        }, isAdding ? 120 : 60)
+                                    }
+                                    // start animation
+                                    playAnim()
+                                </script>
+                            </a>
+                            based in the United Kingdom. I created this website to showcase my skills and document what
+                            I've learned.
                         </p>
                     </div>
                     <p>
@@ -240,15 +296,15 @@
                         <h3>PHP</h3>
                     </div>
                 </div>
-            
+
                 <!-- SASS -->
                 <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
                     <div class="position-relative py-2 shadow">
                         <div class="featurette-icon"><i class="fab fa-sass"></i></div>
                         <h3>Sass</h3>
                     </div>
-                </div> 
-                
+                </div>
+
                 <!-- REACT -->
                 <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
                     <div class="position-relative py-2 shadow">
@@ -321,7 +377,7 @@
                     </div>
                 </div>
 
-            <!-- 
+                <!-- 
                 SKILL TEMPLATE
                 <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
                     <div class="position-relative py-2 shadow">
@@ -456,8 +512,19 @@
     </section>
 
 
+    <!-- PODCAST CARD -->
+        <section id="channel" class="home-section wg-experience PD-footer">
+            <div class="container">
+                <div class="col-12 text-center section-heading podcast-card">
+                    <h1>The StenTechDev PODCAST <i class="fas fa-podcast podcast-switch"></i></h1>
+                    <p>Listen to my latest Episode</p>
+                    <iframe src="https://open.spotify.com/embed-podcast/show/2t0WjhLBrdf0uJ0AB8YdNg" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <!-- <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/gb/podcast/stentechdev-podcast/id1548142687"></iframe> -->
+                </div>
+            </div>
+        </section>
 
-        <!-- YOUTUBE CARD
+    <!-- YOUTUBE CARD
         <section id="channel" class="home-section wg-experience YT-footer">
             <div class="container">
                 <div class="col-12 text-center section-heading youtube-card">
@@ -733,7 +800,9 @@
                                 </a><span class="middot-divider"></span>
                                 Sep 2020 – Nov 2020
                             </div>
-                            <a class="card-link" href="https://www.sololearn.com/certificates/course/en/20157109/1024/landscape/png" target="_blank">
+                            <a class="card-link"
+                                href="https://www.sololearn.com/certificates/course/en/20157109/1024/landscape/png"
+                                target="_blank">
                                 See certificate
                             </a>
                         </div>
@@ -753,7 +822,8 @@
                                 </a><span class="middot-divider"></span>
                                 Sep 2020 – Nov 2020
                             </div>
-                            <a class="card-link" href="https://www.sololearn.com/Certificate/1023-20157109/jpg" target="_blank">
+                            <a class="card-link" href="https://www.sololearn.com/Certificate/1023-20157109/jpg"
+                                target="_blank">
                                 See certificate
                             </a>
                         </div>
@@ -773,7 +843,8 @@
                                 </a><span class="middot-divider"></span>
                                 Sep 2020 – Nov 2020
                             </div>
-                            <a class="card-link" href="https://www.sololearn.com/Certificate/1014-20157109/jpg" target="_blank">
+                            <a class="card-link" href="https://www.sololearn.com/Certificate/1014-20157109/jpg"
+                                target="_blank">
                                 See certificate
                             </a>
                         </div>
@@ -944,12 +1015,15 @@
                                     <img src="img/d2m-project.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="card-body">
-                                    <h4><a href="https://stentechdev-d2m.netlify.app/" target="_blank">Dating Website</a></h4>
+                                    <h4><a href="https://stentechdev-d2m.netlify.app/" target="_blank">Dating
+                                            Website</a></h4>
                                     <div class="card-desription">
                                         <p>
-                                            I developed this website while studying in the Full-Stack Web Dev Bootcamp in 2020.
-                                            I used <em class="und-btn">HTML5</em>, <em class="und-btn">CSS3</em>, 
-                                            <em class="und-btn">Bootstrap</em> and <em class="und-btn">UI/UX</em> design concepts
+                                            I developed this website while studying in the Full-Stack Web Dev Bootcamp
+                                            in 2020.
+                                            I used <em class="und-btn">HTML5</em>, <em class="und-btn">CSS3</em>,
+                                            <em class="und-btn">Bootstrap</em> and <em class="und-btn">UI/UX</em> design
+                                            concepts
                                             to build this site.
                                         </p>
                                     </div>
@@ -959,13 +1033,15 @@
                         <div class="project-card project-item isotope-item js-id-other">
                             <div class="card rounded-0 shadow-sm">
                                 <a href="#" target="_blank" class="card-image">
-                                    <img src="img/project-default.jpg" alt="project-default-image" class="img-responsive">
+                                    <img src="img/project-default.jpg" alt="project-default-image"
+                                        class="img-responsive">
                                 </a>
                                 <div class="card-body">
                                     <h4><a href="#" target="_blank">Fake Name Compatibility Calculator</a></h4>
                                     <div class="card-desription">
                                         <p>
-                                            An application that randomly selects the compatibility between two named inputs.
+                                            An application that randomly selects the compatibility between two named
+                                            inputs.
                                             This was created using <em class="und-btn">JavaScript</em> and styled using
                                             <em class="und-btn">Semantic UI</em>.
                                         </p>
@@ -984,9 +1060,12 @@
                                     </h4>
                                     <div class="card-desription">
                                         <p>
-                                            My previous portfolio website that was created with a minimalistic concept in mind.
-                                            Created with minimalistic <em class="und-btn">UI</em> and <em class="und-btn">UX</em>
-                                            design. Built with <em class="und-btn">HTML5</em>, <em class="und-btn">CSS3</em> and 
+                                            My previous portfolio website that was created with a minimalistic concept
+                                            in mind.
+                                            Created with minimalistic <em class="und-btn">UI</em> and <em
+                                                class="und-btn">UX</em>
+                                            design. Built with <em class="und-btn">HTML5</em>, <em
+                                                class="und-btn">CSS3</em> and
                                             <em class="und-btn">JavaScript</em>.
                                         </p>
                                     </div>
@@ -1039,7 +1118,7 @@
                     </div>
                 </div>
             </div>
-            <p class="foot-note">all source codes for my projects can be found on my GitHub and GitLab</p>
+            <p class="foot-note">all source codes for my projects can be found on my <a href="https://github.com/StenTechDev" target="_blank">GitHub</a> and <a href="https://gitlab.com/StenTechDev" target="_blank">GitLab</a></p>
         </div>
         </div>
     </section>
@@ -1081,7 +1160,8 @@
                                         </span>
                                     </div>
                                     <div class="article-style" itemprop="articleBody">
-                                        Learn all tools you need to be able to build any website you want from scratch using 
+                                        Learn all tools you need to be able to build any website you want from scratch
+                                        using
                                         HTML, CSS, JavaScript, Bootstrap, Node, React and more.
                                     </div>
                                     <div class="btn-links">
@@ -1134,7 +1214,7 @@
                                     </h4>
                                     <div class="card-desription">
                                         <p>
-                                            From Zero to Hero. A complete beginners to expert guide on how to used 
+                                            From Zero to Hero. A complete beginners to expert guide on how to used
                                             jQuery to create animations, user events, forms and more.
                                         </p>
                                     </div>
@@ -1219,7 +1299,8 @@
                                     <h4><a href="#">History of HTML & CSS</a></h4>
                                     <div class="card-desription">
                                         <p>
-                                            Learn the basic fundamentals in HTML & CSS. This is a theory introductory course
+                                            Learn the basic fundamentals in HTML & CSS. This is a theory introductory
+                                            course
                                             to HTML & CSS.
                                         </p>
                                     </div>
@@ -1277,7 +1358,8 @@
                         <li>
                             <i class="fa-li fab fa-whatsapp mt-2" aria-hidden="true"></i>
                             <span id="person-whatsapp" itemprop="telephone"><a
-                                    href="https://wa.me/447496001350?text=I%20would%20like%20to%20get%20in%20touch%20with%20you" target="_blank">WhatsApp
+                                    href="https://wa.me/447496001350?text=I%20would%20like%20to%20get%20in%20touch%20with%20you"
+                                    target="_blank">WhatsApp
                                     Me</a></span>
                         </li>
                         <li>
@@ -1289,9 +1371,7 @@
                         <li>
                             <i class="fa-li fas fa-clock mt-2" aria-hidden="true"></i>
                             <span>
-                                Mon - Fri: 14:00 to 21:00
-                                <br>
-                                Weekends: 16:00 to 21:00
+                                Anytime
                             </span>
                         </li>
                         <li>
