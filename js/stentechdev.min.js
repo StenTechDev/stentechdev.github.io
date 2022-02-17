@@ -467,8 +467,8 @@
 
 function passwd() {
 
-    let password = prompt('Enter the password to download the CV [allow pop-ups]:');
-    if (password.toLowerCase() === "zion") {
+    let password = prompt('Enter: stentechdev as password to download the CV [allow pop-ups]:');
+    if (password.toLowerCase() === "stentechdev") {
         window.open("doc/sten-mayunga-cv.pdf")
     }
     else {
