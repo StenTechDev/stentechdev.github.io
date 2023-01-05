@@ -2,4 +2,4 @@
 
 My current Portolio website that will be updated and maintain constantly.
 
-visit: https://www.stentech.dev
+visit: https://stentech.dev
