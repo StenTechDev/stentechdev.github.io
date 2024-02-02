@@ -34,12 +34,12 @@ This project is open-source and available under the [MIT License](https://openso
 
 ## Connect with me
 LikedIn: [Sten Mayunga](https://www.linkedin.com/in/stentechdev/)
-Email: [stentechdev@gmail.com](mailto:stentechdev@gmail.com)
-GitHub: [@StenTechDev](https://github.com/StenTechDev)
-Instagram: [@StenTechDev](https://www.instagram.com/stentechdev/)
-X (Twitter): [@StenTechDev](https://twitter.com/StenTechDev)
-Facebook: [StenTechDev](https://www.facebook.com/StenTechDev)
-TikTok: [@StenTechDev](https://www.tiktok.com/@stentechdev)
+<br>Email: [stentechdev@gmail.com](mailto:stentechdev@gmail.com)
+<br>GitHub: [@StenTechDev](https://github.com/StenTechDev)
+<br>Instagram: [@StenTechDev](https://www.instagram.com/stentechdev/)
+<br>X (Twitter): [@StenTechDev](https://twitter.com/StenTechDev)
+<br>Facebook: [StenTechDev](https://www.facebook.com/StenTechDev)
+<br>TikTok: [@StenTechDev](https://www.tiktok.com/@stentechdev)
 
 Thank you for visiting my portfolio repository!
 
