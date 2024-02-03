@@ -1,5 +1,3 @@
-# stentechdev.github.io
-
 # Sten Mayunga's Portfolio Website
 Welcome to the Github repository of my personal portfolio website! This site showcases my projects, skills, and experiences as a Software Engineer. I also have my podcast and a blog that can be found on the website.
 
